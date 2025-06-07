@@ -1,0 +1,27 @@
+// Importing module
+
+// import { addToCart, totalPrice as price, tq } from './shoppingCart.js';
+
+console.log('Importing module!');
+// // console.log(shippingCost);
+
+// addToCart('bread', 5);
+// console.log(price, tq);
+
+// import * as ShoppingCart from './shoppingCart.js';
+
+// ShoppingCart.addToCart('bread', 5);
+// console.log(ShoppingCart.totalPrice);
+
+// add imitom davarkvit rom export default function s ar akvt saxelebi pridapir values vaexportebt amitom importis dros rasac gvinda imas davarkmevt
+
+// shegvidzlia shevuriot named export da default export margram amas arasdros vaketebt
+// import add, { addToCart, totalPrice as price, tq } from './shoppingCart.js';
+// console.log(price);
+
+import add, { cart } from './shoppingCart.js';
+add('pizza', 2);
+add('bread', 5);
+add('apples', 4);
+
+console.log(cart);
