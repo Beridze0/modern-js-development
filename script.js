@@ -47,7 +47,7 @@ const getLastPost = async function () {
 
 const lastPost2 = await getLastPost();
 console.log(lastPost2);
-*/
+
 
 const ShoppingCart2 = (function () {
   const cart = [];
@@ -80,3 +80,14 @@ ShoppingCart2.addToCart('pizza', 2);
 
 console.log(ShoppingCart2);
 console.log(ShoppingCart2.shippingCost);
+*/
+
+// Export
+export.addToCart = function (product, quantity) {
+    cart.push({ product, quantity });
+    console.log(`${quantity} ${product} ordered from supplier`);
+  };
+
+
+// Import
+const { addToCart } = require('./shoppingCart.js')
